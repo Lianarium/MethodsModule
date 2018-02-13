@@ -1,0 +1,8 @@
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\bin\Debug\Runner.exe.config
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\bin\Debug\Runner.exe
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\bin\Debug\Runner.pdb
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\bin\Debug\Point.dll
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\bin\Debug\Point.pdb
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\obj\Debug\Runner.csprojResolveAssemblyReference.cache
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\obj\Debug\Runner.exe
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\obj\Debug\Runner.pdb

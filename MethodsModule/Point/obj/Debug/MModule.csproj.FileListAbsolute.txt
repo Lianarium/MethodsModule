@@ -1,0 +1,5 @@
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Point\bin\Debug\Point.dll
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Point\bin\Debug\Point.pdb
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Point\obj\Debug\MModule.csprojResolveAssemblyReference.cache
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Point\obj\Debug\Point.dll
+c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Point\obj\Debug\Point.pdb
