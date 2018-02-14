@@ -6,3 +6,11 @@ c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\b
 c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\obj\Debug\Runner.csprojResolveAssemblyReference.cache
 c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\obj\Debug\Runner.exe
 c:\users\alina_apet\documents\visual studio 2015\Projects\MethodsModule\Runner\obj\Debug\Runner.pdb
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\Debug\Runner.exe.config
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.exe
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.pdb
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\Debug\Runner.exe
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\Debug\Runner.pdb
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\Debug\Point.dll
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\Debug\Point.pdb
+C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.csprojResolveAssemblyReference.cache
