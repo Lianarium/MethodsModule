@@ -12,23 +12,23 @@ namespace Runner
 	{
 		static void Main(string[] args)
 		{
-			Point point = new Point(4, 5);
-			Console.WriteLine(point.ToString());
-			RecursionCounter obj = new RecursionCounter();
-			RecursionCounter obj1 = new RecursionCounter();
-			RecursionCounter obj2 = new RecursionCounter();
-			Console.WriteLine(RecursionCounter.Instance);
-			int number = 200;
-			RecursionCounter obj4 = new RecursionCounter();
-			Console.WriteLine("Fast: " + RecursionCounter.mtx2x2.fibm(100));
-			//Console.WriteLine("Slow: " + obj4.CountFibonacciSlow(number));
-			//Console.WriteLine("Little Memory: " + obj4.CountFibonacciLittleMemory(number));
+			do
+			{
+				Point point = new Point(ReaderFromConsole.ReadPointCoordinates());
+				Console.WriteLine(point.ToString());
+				RecursionCounter obj = new RecursionCounter();
+				RecursionCounter obj1 = new RecursionCounter();
+				RecursionCounter obj2 = new RecursionCounter();
+				Console.WriteLine(RecursionCounter.Instance);
 
-			Console.WriteLine(RecursionCounter.Instance);
-			//BigInteger big = new BigInteger(RecursionCounter.mtx2x2.fibm(50));
-			//Console.WriteLine(big);
+				RecursionCounter obj4 = new RecursionCounter();
+				Console.WriteLine("Fast: " + RecursionCounter.mtx2x2.fibm(ReaderFromConsole.ReadNumber()));
 
 
+				Console.WriteLine(RecursionCounter.Instance);
+				 
+				//Console.WriteLine(RecursionCounter.FactFactor(50000));
+			} while (ReaderFromConsole.AskToContinue().Equals("y"));
 		}
 	}
 }

@@ -23,15 +23,15 @@ namespace MModule
 			set { y = value; }
 		}
 
-		public Point(double valuex, double valuey)
+		public Point(double[] coordinates)
 		{
-			x = valuex;
-			y = valuey;
+			x = coordinates[0];
+			y = coordinates[1];
 		}
 
 		public override bool Equals(Object obj)
 		{
-			// Check for null values and compare run-time types.
+			 
 			if (obj == null || GetType() != obj.GetType())
 				return false;
 
