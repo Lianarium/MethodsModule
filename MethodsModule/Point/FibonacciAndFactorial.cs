@@ -4,22 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
+using System.Collections;
 
 namespace MModule
 {
-	public class RecursionCounter
+	public class FibonacciAndFactorial
 	{
-		private int rowposition;
+		private int number;
 		private static int instancenumber;
+		private ArrayList sequence;
+
+
+		public ArrayList Sequence
+		{
+			get { return sequence; }
+		}
+
+		public int Number
+		{
+			set { number = value; }
+			get { return number; }
+		}
 
 		public static int Instance
 		{
 			get { return instancenumber; }
 		}
 
-		public RecursionCounter()
+		public FibonacciAndFactorial()
 		{
 			instancenumber++;
+			this.sequence = new ArrayList();
 		}
 
 		public int CountFibonacciSlow(int num)
@@ -56,18 +71,19 @@ namespace MModule
 
 		public struct mtx2x2
 		{
-			private static readonly mtx2x2 fibMtx = new mtx2x2 { _11 = 1, _12 = 1, _21 = 1 };
-			private static readonly mtx2x2 identity = new mtx2x2 { _11 = 1, _22 = 1 };
+			private static readonly mtx2x2 fibMtx = new mtx2x2 { el00 = 1, el01 = 1, el10 = 1 };
+			private static readonly mtx2x2 identity = new mtx2x2 { el00 = 1, el11 = 1 };
 
-			public BigInteger _11, _12, _21, _22;
+			public BigInteger el00, el01, el10, el11;
+
 			public static mtx2x2 operator *(mtx2x2 lhs, mtx2x2 rhs)
 			{
 				return new mtx2x2
 				{
-					_11 = lhs._11 * rhs._11 + lhs._12 * rhs._21,
-					_12 = lhs._11 * rhs._12 + lhs._12 * rhs._22,
-					_21 = lhs._21 * rhs._11 + lhs._22 * rhs._21,
-					_22 = lhs._21 * rhs._12 + lhs._22 * rhs._22
+					el00 = lhs.el00 * rhs.el00 + lhs.el01 * rhs.el10,
+					el01 = lhs.el00 * rhs.el01 + lhs.el01 * rhs.el11,
+					el10 = lhs.el10 * rhs.el00 + lhs.el11 * rhs.el10,
+					el11 = lhs.el10 * rhs.el01 + lhs.el11 * rhs.el11
 				};
 			}
 
@@ -84,10 +100,19 @@ namespace MModule
 			}
 
 			public static BigInteger fibm(int n)
-			{
-				return IntPower(fibMtx, (short)(n - 1))._11;
+			{ 
+				return IntPower(fibMtx, (short)(n - 1)).el00;
 			}
 
+			public static FibonacciAndFactorial CreateSecuence(FibonacciAndFactorial obj)
+			{
+				for (int i = 1; i <= obj.Number; i++)
+				{
+					obj.Sequence.Add(mtx2x2.fibm(i));
+				}
+
+				return obj;
+			}
 		}
 
 		public static BigInteger FactFactor(int n)

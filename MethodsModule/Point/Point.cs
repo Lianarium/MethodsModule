@@ -36,12 +36,12 @@ namespace MModule
 				return false;
 
 			Point point = (Point)obj;
-			return (x == point.x) && (y == point.y);
+			return (X == point.X) && (Y == point.Y);
 		}
 
 		public override string ToString()
 		{
-			return base.ToString() + ": (" + x.ToString() + "," + y.ToString()+")";
+			return base.ToString() + ": (" + X.ToString() + "," + Y.ToString()+")";
 		}
 
 	}

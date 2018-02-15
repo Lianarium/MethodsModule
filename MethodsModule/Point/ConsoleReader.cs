@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace MModule
 {
-	public class ReaderFromConsole
+	public class ConsoleReader
 	{
 		public static double[] ReadPointCoordinates()
 		{
 			string[] coordinates = new string[2];
 			double[] numcoordinates = new double[2];
-			 
-          	do
+
+			do
 			{
 				Console.WriteLine("Enter the X coordinate: ");
 				coordinates[0] = Console.ReadLine();
@@ -30,7 +30,7 @@ namespace MModule
 			return numcoordinates;
 		}
 
-		public static int ReadNumber()
+		public static int ReadNumberFibonacci()
 		{
 			string number;
 			int intnumber;
@@ -40,7 +40,22 @@ namespace MModule
 				Console.WriteLine("Enter the number: ");
 				number = Console.ReadLine();
 
-			} while (!(int.TryParse(number, out intnumber)));
+			} while (!(int.TryParse(number, out intnumber))||(intnumber<=0));
+
+			return intnumber;
+		}
+
+		public static int ReadNumberFactorial()
+		{
+			string number;
+			int intnumber;
+
+			do
+			{
+				Console.WriteLine("Enter the number: ");
+				number = Console.ReadLine();
+
+			} while (!(int.TryParse(number, out intnumber)) || (intnumber < 0));
 
 			return intnumber;
 		}

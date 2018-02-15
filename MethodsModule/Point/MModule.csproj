@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ReaderFromConsole.cs" />
-    <Compile Include="RecursionCounter.cs" />
+    <Compile Include="ConsoleReader.cs" />
+    <Compile Include="FibonacciAndFactorial.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -14,21 +14,21 @@ namespace Runner
 		{
 			do
 			{
-				Point point = new Point(ReaderFromConsole.ReadPointCoordinates());
+				Point point = new Point(ConsoleReader.ReadPointCoordinates());
 				Console.WriteLine(point.ToString());
-				RecursionCounter obj = new RecursionCounter();
-				RecursionCounter obj1 = new RecursionCounter();
-				RecursionCounter obj2 = new RecursionCounter();
-				Console.WriteLine(RecursionCounter.Instance);
+				FibonacciAndFactorial obj = new FibonacciAndFactorial();
+				FibonacciAndFactorial obj1 = new FibonacciAndFactorial();
+				FibonacciAndFactorial obj2 = new FibonacciAndFactorial();
+				Console.WriteLine(FibonacciAndFactorial.Instance);
 
-				RecursionCounter obj4 = new RecursionCounter();
-				Console.WriteLine("Fast: " + RecursionCounter.mtx2x2.fibm(ReaderFromConsole.ReadNumber()));
+				FibonacciAndFactorial obj4 = new FibonacciAndFactorial();
+				Console.WriteLine("Fast: " + FibonacciAndFactorial.mtx2x2.fibm(ConsoleReader.ReadNumberFibonacci()));
 
 
-				Console.WriteLine(RecursionCounter.Instance);
+				Console.WriteLine(FibonacciAndFactorial.Instance);
 				 
-				//Console.WriteLine(RecursionCounter.FactFactor(50000));
-			} while (ReaderFromConsole.AskToContinue().Equals("y"));
+				Console.WriteLine(FibonacciAndFactorial.FactFactor(ConsoleReader.ReadNumberFactorial()));
+			} while (ConsoleReader.AskToContinue().Equals("y"));
 		}
 	}
 }
