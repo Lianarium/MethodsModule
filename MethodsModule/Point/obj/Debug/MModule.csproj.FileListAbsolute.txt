@@ -8,3 +8,9 @@ C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Point\bin\De
 C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Point\obj\Debug\MModule.csprojResolveAssemblyReference.cache
 C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Point\obj\Debug\Point.dll
 C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Point\obj\Debug\Point.pdb
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Point\bin\Debug\Point.dll
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Point\bin\Debug\Point.pdb
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Point\obj\Debug\MModule.csprojResolveAssemblyReference.cache
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Point\obj\Debug\MModule.csproj.CoreCompileInputs.cache
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Point\obj\Debug\Point.dll
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Point\obj\Debug\Point.pdb

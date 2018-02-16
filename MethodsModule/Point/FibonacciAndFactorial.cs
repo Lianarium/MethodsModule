@@ -31,9 +31,10 @@ namespace MModule
 			get { return instancenumber; }
 		}
 
-		public FibonacciAndFactorial()
+		public FibonacciAndFactorial(int numbervalue)
 		{
 			instancenumber++;
+            this.number = numbervalue;
 			this.sequence = new ArrayList();
 		}
 
@@ -62,11 +63,10 @@ namespace MModule
 			if (power == 1) return x;
 			int n = 15;
 			while ((power <<= 1) >= 0) n--;
-			BigInteger tmp = x;
+			BigInteger temp = x;
 			while (--n > 0)
-				tmp = tmp * tmp *
-					 (((power <<= 1) < 0) ? x : 1);
-			return tmp;
+				temp = temp * temp * (((power <<= 1) < 0) ? x : 1);
+			return temp;
 		}
 
 		public struct mtx2x2
@@ -76,27 +76,27 @@ namespace MModule
 
 			public BigInteger el00, el01, el10, el11;
 
-			public static mtx2x2 operator *(mtx2x2 lhs, mtx2x2 rhs)
+			public static mtx2x2 operator *(mtx2x2 A, mtx2x2 B)
 			{
 				return new mtx2x2
 				{
-					el00 = lhs.el00 * rhs.el00 + lhs.el01 * rhs.el10,
-					el01 = lhs.el00 * rhs.el01 + lhs.el01 * rhs.el11,
-					el10 = lhs.el10 * rhs.el00 + lhs.el11 * rhs.el10,
-					el11 = lhs.el10 * rhs.el01 + lhs.el11 * rhs.el11
+					el00 = A.el00 * B.el00 + A.el01 * B.el10,
+					el01 = A.el00 * B.el01 + A.el01 * B.el11,
+					el10 = A.el10 * B.el00 + A.el11 * B.el10,
+					el11 = A.el10 * B.el01 + A.el11 * B.el11
 				};
 			}
 
-			public static mtx2x2 IntPower(mtx2x2 x, short power)
+			public static mtx2x2 IntPower(mtx2x2 matrix, short power)
 			{
 				if (power == 0) return identity;
-				if (power == 1) return x;
+				if (power == 1) return matrix;
 				int n = 15;
 				while ((power <<= 1) >= 0) n--;
-				mtx2x2 tmp = x;
+				mtx2x2 temp = matrix;
 				while (--n > 0)
-					tmp = (tmp * tmp) * (((power <<= 1) < 0) ? x : identity);
-				return tmp;
+					temp = (temp * temp) * (((power <<= 1) < 0) ? matrix : identity);
+				return temp;
 			}
 
 			public static BigInteger fibm(int n)
@@ -115,21 +115,21 @@ namespace MModule
 			}
 		}
 
-		public static BigInteger FactFactor(int n)
+		public static BigInteger FactFactor(int number)
 		{
-			if (n < 0)
+			if (number < 0)
 				return 0;
-			if (n == 0)
+			if (number == 0)
 				return 1;
-			if (n == 1 || n == 2)
-				return n;
-			bool[] u = new bool[n + 1]; // маркеры для решета Эратосфена
+			if (number == 1 || number == 2)
+				return number;
+			bool[] eratosfen_markers = new bool[number + 1]; // маркеры для решета Эратосфена
 			List<Tuple<int, int>> p = new List<Tuple<int, int>>(); // множители и их показатели степеней
-			for (int i = 2; i <= n; ++i)
-				if (!u[i]) // если i - очередное простое число
+			for (int i = 2; i <= number; ++i)
+				if (!eratosfen_markers[i]) // если i - очередное простое число
 				{
 					// считаем показатель степени в разложении
-					int k = n / i;
+					int k = number / i;
 					int c = 0;
 					while (k > 0)
 					{
@@ -140,9 +140,9 @@ namespace MModule
 					p.Add(new Tuple<int, int>(i, c));
 					// просеиваем составные числа через решето               
 					int j = 2;
-					while (i * j <= n)
+					while (i * j <= number)
 					{
-						u[i * j] = true;
+						eratosfen_markers[i * j] = true;
 						++j;
 					}
 				}

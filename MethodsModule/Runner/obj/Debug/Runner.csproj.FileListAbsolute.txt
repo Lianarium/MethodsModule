@@ -14,3 +14,12 @@ C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\D
 C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\Debug\Point.dll
 C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\bin\Debug\Point.pdb
 C:\Users\Alina_Apet\Documents\Hometask4\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.csprojResolveAssemblyReference.cache
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\bin\Debug\Runner.exe.config
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\bin\Debug\Runner.exe
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\bin\Debug\Runner.pdb
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\bin\Debug\Point.dll
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\bin\Debug\Point.pdb
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.csprojResolveAssemblyReference.cache
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.csproj.CoreCompileInputs.cache
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.exe
+C:\Users\User1\Documents\HT4net\MethodsModule\MethodsModule\Runner\obj\Debug\Runner.pdb
